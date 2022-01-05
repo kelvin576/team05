@@ -1,0 +1,32 @@
+@extends('app')
+@section('title','顯示單一遊戲資料')
+@section('Game_contents')
+
+<table border="1">
+    <tr>
+        <td>編號</td>
+        <td>{{$games->id}}</td>
+    <tr/>
+    <tr>
+        <td>遊戲名稱</td>
+        <td>{{$games->name}}</td>
+    <tr/>
+    <tr>
+        <td>發售平台</td>
+        <td>{{$games->platform}}</td>
+    <tr/>
+    <tr>
+        <td>開發商</td>
+        <td>{{$games->developer}}</td>
+    <tr/>
+    <tr>
+        <td>發行商</td>
+        <td>{{$games->publisher}}</td>
+    <tr/>
+    <tr>
+        <td>遊戲類型編號</td>
+        <td>{{$games->gid}}{{$games->genres->name}}</td>
+    </tr>
+</table>
+</body>
+@endsection
