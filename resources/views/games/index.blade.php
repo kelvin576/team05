@@ -2,6 +2,9 @@
 @section('title','顯示所有遊戲資料')
 @section('Game_contents')
 <br>
+<body>
+<body bgcolor="	#FFDAC8"></body>
+</body>
 <td>
     <a href="/games/create">
         新增
@@ -23,7 +26,7 @@
     運動類
 </a>
 
-<table border="1">
+<table bgcolor="#95CACA" border="1">
     <tr>
         <th>編號</th>
         <th>遊戲名稱</th>
