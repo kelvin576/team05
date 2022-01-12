@@ -7,5 +7,8 @@
     @include('header')
     @yield('Game_contents')
     @include('footer')
+    <body bgcolor="	#FFDAC8"></body>
+
 </body>
+
 </html>

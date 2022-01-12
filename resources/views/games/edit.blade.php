@@ -4,7 +4,7 @@
 <form method="post" action="/games/{{$games->id}}">
     @csrf
     @method('put')
-<table border="1">
+<table bgcolor="#95CACA" border="1">
     <tr>
         <td>編號</td>
         <td>{{$games->id}}</td>

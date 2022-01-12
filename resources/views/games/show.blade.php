@@ -1,8 +1,7 @@
 @extends('app')
 @section('title','顯示單一遊戲資料')
 @section('Game_contents')
-
-<table border="1">
+<table bgcolor="#95CACA" border="1">
     <tr>
         <td>編號</td>
         <td>{{$games->id}}</td>

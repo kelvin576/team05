@@ -5,7 +5,7 @@
 <a href="/genres/create">
     新增
 </a>
-<table border="1">
+<table bgcolor="#95CACA" border="1">
     <tr>
         <th>編號</th>
         <th>遊戲類型</th>

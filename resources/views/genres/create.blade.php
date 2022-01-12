@@ -3,7 +3,7 @@
 @section('Game_contents')
 <form method="post" action="/genres">
     @csrf
-    <table border="1">
+    <table bgcolor="#95CACA" border="1">
         <tr>
             <th>遊戲類型</th>
             <td>

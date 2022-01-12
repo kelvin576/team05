@@ -99,4 +99,30 @@ class GenresController extends Controller
         $genre->delete();
         return redirect('genres');
     }
+    public function  api_genres()
+    {
+        return Genre::all();
+    }
+    public function  api_update(Request $request)
+    {
+        $genre = Genre::find($request->input('id'));
+        if($genre == null)
+        {
+            return response()->json([
+                'status' => 0,
+            ]);
+        }
+
+        $genre->name = $request->input('name');
+        if($genre->save())
+        {
+            return response()->json([
+                'status'=>1,
+            ]);
+        }else{
+            return response()->json([
+                'status'=>0,
+            ]);
+        }
+    }
 }

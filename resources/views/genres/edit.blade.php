@@ -5,7 +5,7 @@
 <form method="post" action="/genres/{{$genres->id}}">
     @csrf
     @method('put')
-<table border="1">
+<table bgcolor="#95CACA" border="1">
     <tr>
         <td>編號</td>
         <td>{{$genres->id}}</td>
