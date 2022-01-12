@@ -125,4 +125,22 @@ class GenresController extends Controller
             ]);
         }
     }
+    public function api_delete(Request $request)
+    {
+        $genre = Genre::find($request->input('id'));
+
+        if($genre == null)
+        {
+            return response()->json([
+                'status'=>0,
+            ]);
+        }
+
+        if ($genre->delete())
+        {
+            return response()->json([
+                'status' => 1,
+            ]);
+        }
+    }
 }
