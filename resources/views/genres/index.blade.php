@@ -3,7 +3,7 @@
 @section('Game_contents')
 
 <a href="/genres/create">
-    新增
+    新增類型
 </a>
 <table bgcolor="#95CACA" border="1">
     <tr>
